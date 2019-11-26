@@ -2,7 +2,7 @@
 // Initialize the session
 session_start();
 
-//require 'conndb.php';
+require 'conndb.php';
 
 //Include people table
 //$sql = 'SELECT * FROM people WHERE active="Active"';
