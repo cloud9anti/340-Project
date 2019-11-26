@@ -55,14 +55,23 @@ $connection = new mysqli($server, $username, $password, $db);
 
 $sql = 'SELECT * FROM SELECT * FROM heroku_7907a8bdd4fde12.people';
 $result = mysqli_query($connection,$sql);
-
+$people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 /*
 $statement = $connection->prepare($sql);
 $statement->execute();
 $people = $statement->fetchAll(PDO::FETCH_OBJ);
 */
  ?>
-<?php  echo "yay"; //require 'header.php'; ?>
+<?php  echo "yay"; //require 'header.php'; 
+
+
+	while ($people= mysqli_fetch_array($result)) {
+
+						?>
+						
+
+  <h5> $<?php echo $people['first_name']; ?></h5>
+					<?php } ?>
 
 
 
