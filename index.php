@@ -12,6 +12,8 @@ $sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
+
+		mysqli_query($connection, "INSERT INTO `heroku_7907a8bdd4fde12`.`people` (`first_name`, `last_name`, `email`, `street`, `city`) VALUES ('as22d', 'as22d', 'as22d', 'a22sd', 'a22sd')");
  ?>
 
 
