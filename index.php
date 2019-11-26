@@ -42,7 +42,7 @@ static $dailyOrders = 0;
 //$statement->execute();
 //$people = $statement->fetchAll(PDO::FETCH_OBJ);
 
-$sql = 'SELECT * FROM people';
+$sql = 'SELECT * FROM SELECT * FROM heroku_7907a8bdd4fde12.people';
 $statement = $connection->prepare($sql);
 $statement->execute();
 $people = $statement->fetchAll(PDO::FETCH_OBJ);
