@@ -1,13 +1,8 @@
-<!doctype html>
+
 
 <?php
 
-//if an admin, send back to admin/index.php
-if ($_SESSION["admin"] == "yes") {
 
-   // Redirect user to index page
-  header("location: admin/index.php");
-} 
 
 ?>
 
@@ -52,20 +47,6 @@ if ($_SESSION["admin"] == "yes") {
       </li>
 	  <h1>   ------------------------------</h1>
 
-
-	  <!-- Account buttons (top right) -->
-	  <li class="nav-item active">
-        <a class="navbar-brand" href="login.php"><?php echo htmlspecialchars($_SESSION["username"]); ?> <span class="sr-only">(current)</span></a>
-      </li>
-	  <li class="nav-item active">
-        <a class="navbar-brand" href="login.php"> <?php if ($_SESSION["loggedin"] !== true) { echo "[Login]"; } ?><span class="sr-only">(current)</span></a>
-      </li>
-	  <li class="nav-item active">
-        <a class="navbar-brand" href="logout.php"> <?php if ($_SESSION["loggedin"] == true) { echo "[Log Out]"; } ?> <span class="sr-only">(current)</span></a>
-      </li>
-	  <li class="nav-item active">
-        <a class="navbar-brand" href="register.php"> <?php if ($_SESSION["loggedin"] !== true) { echo "[Create Account]"; } ?><span class="sr-only">(current)</span></a>
-      </li>
 
       
       

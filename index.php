@@ -3,6 +3,7 @@
 session_start();
 
 require 'conndb.php';
+require 'header.php';
 
 
 
@@ -81,9 +82,9 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 						?>
 						
                 <tr>
-                    <th><?php echo $people['first_name']; ?></th>
-                    <th><?php echo $people['last_name']; ?></th>
-                    <th><?php echo $people['city']; ?></th>
+                    <td><?php echo $people['first_name']; ?></td>
+                    <td><?php echo $people['last_name']; ?></td>
+                    <td><?php echo $people['city']; ?></td>
                 </tr>
               
           			<?php } ?>
