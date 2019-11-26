@@ -3,7 +3,7 @@
 session_start();
 
 //require 'conndb.php';
-
+/*
 $dsn = 'mysql:host=us-cdbr-iron-east-05.cleardb.net;dbname=heroku_7907a8bdd4fde12';
 $host = 'us-cdbr-iron-east-05.cleardb.net';
 $db_name = 'heroku_7907a8bdd4fde12';
@@ -33,7 +33,7 @@ if($link === false){
 //track the daily number of orders
 
 static $dailyOrders = 0;
-
+*/
 
 //Include people table
 //$sql = 'SELECT * FROM people WHERE active="Active"';
