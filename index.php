@@ -53,7 +53,7 @@ $db = substr($url["path"], 1);
 $connection = new mysqli($server, $username, $password, $db);
 
 
-$sql = 'SELECT * FROM SELECT * FROM heroku_7907a8bdd4fde12.people';
+$sql = 'SELECT * FROM SELECT * FROM people';
 $statement = $connection->prepare($sql);
 $statement->execute();
 $people = $statement->fetchAll(PDO::FETCH_OBJ);
