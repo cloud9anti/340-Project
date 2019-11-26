@@ -24,27 +24,25 @@
     <ul class="navbar-nav mr-auto">
 
 	<!-- Navigation buttons (top left) -->
+	  <li class="nav-item active">
+        <a class="navbar-brand" href="home.php">[Home] <span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item active">
-        <a class="navbar-brand" href="index.php">[Home] <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="index.php">[Student List] <span class="sr-only">(current)</span></a>
       </li>
 	  <li class="nav-item active">
-        <a class="navbar-brand" href="groups.php">[Areas] <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="assignments.php">[Assignments] <span class="sr-only">(current)</span></a>
       </li>
 	  <li class="nav-item active">
-        <a class="navbar-brand" href="communities.php">[Communities] <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="courses.php">[Courses] <span class="sr-only">(current)</span></a>
       </li>
 	  <li class="nav-item active">
-        <a class="navbar-brand" href="venues.php">[Venues] <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="enrolledCourses.php">[Enrolled Courses] <span class="sr-only">(current)</span></a>
       </li>
 	  <li class="nav-item active">
-        <a class="navbar-brand" href="allShops.php">[Shops] <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="people.php">[People] <span class="sr-only">(current)</span></a>
       </li>
-	  <li class="nav-item active">
-        <a class="navbar-brand" href="cart.php">[Shopping Cart] <span class="sr-only">(current)</span></a>
-      </li>
-	  <li class="nav-item active">
-        <a class="navbar-brand" href="orders.php">[My Orders] <span class="sr-only">(current)</span></a>
-      </li>
+
 	  <h1>   ------------------------------</h1>
 
 
