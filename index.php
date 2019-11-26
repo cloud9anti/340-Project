@@ -2,7 +2,7 @@
 // Initialize the session
 session_start();
 
-require 'conndb.php';
+//require 'conndb.php';
 /*
 $dsn = 'mysql:host=us-cdbr-iron-east-05.cleardb.net;dbname=heroku_7907a8bdd4fde12';
 $host = 'us-cdbr-iron-east-05.cleardb.net';
@@ -42,11 +42,22 @@ static $dailyOrders = 0;
 //$statement->execute();
 //$people = $statement->fetchAll(PDO::FETCH_OBJ);
 
+
+$url = parse_url(getenv("mysql://b73b7a0286f36e:3f079b57@us-cdbr-iron-east-05.cleardb.net/heroku_7907a8bdd4fde12?reconnect=true"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+$connection = new mysqli($server, $username, $password, $db);
+
+/*
 $sql = 'SELECT * FROM SELECT * FROM heroku_7907a8bdd4fde12.people';
 $statement = $connection->prepare($sql);
 $statement->execute();
 $people = $statement->fetchAll(PDO::FETCH_OBJ);
-
+*/
  ?>
 <?php  echo "yay"; //require 'header.php'; ?>
 
