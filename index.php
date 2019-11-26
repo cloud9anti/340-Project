@@ -67,6 +67,12 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 
             <table style="width:100%">
+			<tr>
+			<th> First Name </th>
+			<th> Last Name </th>
+			<th> City </th>
+			
+			</tr>
 	<?php 
 
 
