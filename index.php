@@ -2,7 +2,7 @@
 // Initialize the session
 session_start();
 
-//require 'conndb.php';
+require 'conndb.php';
 /*
 $dsn = 'mysql:host=us-cdbr-iron-east-05.cleardb.net;dbname=heroku_7907a8bdd4fde12';
 $host = 'us-cdbr-iron-east-05.cleardb.net';
