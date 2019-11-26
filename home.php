@@ -12,11 +12,19 @@ $sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
- ?>
-<body>
 
+		mysqli_query($connection, "INSERT INTO `heroku_7907a8bdd4fde12`.`people` (`first_name`, `last_name`, `email`, `street`, `city`) VALUES ('as22d', 'as22d', 'as22d', 'a22sd', 'a22sd')");
+ ?>
+
+
+
+<head>
+	<title>Student List</title>
+</head>
+<body>
 	<h1>Welcome professor, please select a student!!!!.</h1>
-   
+	
+
 
             <h2>Student List</h2>
 		<form action="">
@@ -28,59 +36,36 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 
             <table style="width:100%">
-                <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Age</th>
-                </tr>
-                <tr>
-                    <td>Johnny</td>
-                    <td>Adams</td>
-                    <td>19</td>
-                </tr>
-                <tr>
-                    <td>Eve</td>
-                    <td>Brown</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Kerri</td>
-                    <td>Edmonds</td>
-                    <td>19</td>
-                </tr>
-                <tr>
-                    <td>Lisa</td>
-                    <td>Jackson</td>
-                    <td>19</td>
-                </tr>
-                <tr>
-                    <td>Susanne</td>
-                    <td>Lane</td>
-                    <td>23</td>
-                </tr>
-                <tr>
-                    <td>Tom</td>
-                    <td>Nichols</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>Jenny</td>
-                    <td>Phillips</td>
-                    <td>19</td>
-                </tr>
-                <tr>
-                    <td>Tom</td>
-                    <td>Quinn</td>
-                    <td>18</td>
-                </tr>
+			<tr>
+			<th> First Name </th>
+			<th> Last Name </th>
+			<th> City </th>
+			
+			</tr>
+	<?php 
 
+
+	while ($people= mysqli_fetch_array($result)) {
+
+						?>
+						
+                <tr>
+                    <td><?php echo $people['first_name']; ?></td>
+                    <td><?php echo $people['last_name']; ?></td>
+                    <td><?php echo $people['city']; ?></td>
                 </tr>
+              
+          			<?php } ?>
             </table>
 
 
 
 
 <table id="table" align="center"></table>
+
+	  <li >
+        <a href="studentAdd.php">Create New Student </a>
+      </li>
 
 </body>
 
