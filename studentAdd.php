@@ -6,7 +6,7 @@ $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 $message = '';
-if (isset ($_POST['name'])  && isset($_POST['details']) && isset($_POST['sku']) && isset($_POST['price'])) {
+if (isset ($_POST['first_name'])  && isset($_POST['last_name']) && isset($_POST['city'])) {
   $first_name = $_POST['first_name'];
   $last_name = $_POST['last_name'];
   $city = $_POST['city'];
@@ -16,6 +16,7 @@ if (isset ($_POST['name'])  && isset($_POST['details']) && isset($_POST['sku']) 
 
 
 		mysqli_query($connection, "INSERT INTO people(first_name, last_name, city) VALUES('$first_name', '$last_name', 'portage')");
+		//mysqli_query($connection, "INSERT INTO `heroku_7907a8bdd4fde12`.`people` (`first_name`, `last_name`, `email`, `street`, `city`) VALUES ('as22d', 'as22d', 'as22d', 'a22sd', 'a22sd')");
   
 }
  ?>
