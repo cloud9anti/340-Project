@@ -1,9 +1,9 @@
 <?php
-$dsn = 'mysql:host=us-cdbr-iron-east-05.cleardb.net;dbname=heroku_7907a8bdd4fde12';
-$host = 'us-cdbr-iron-east-05.cleardb.net';
-$db_name = 'heroku_7907a8bdd4fde12';
-$username = 'b73b7a0286f36e';
-$password = '3f079b57';
+$dsn = 'mysql:host=localhost;dbname=rankhadd';
+$host = 'localhost';
+$db_name = 'rankhadd';
+$username = 'root';
+$password = 'usbw';
 $options = [];
 try {
 $connection = new PDO('mysql:host='.$host.';dbname='.$db_name, $username, $password, $options);
