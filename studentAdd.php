@@ -1,9 +1,6 @@
 <?php
 require 'conndb.php';
 
- 
-
-
 $message = '';
 if (isset ($_POST['name'])  && isset($_POST['details']) && isset($_POST['sku']) && isset($_POST['price'])) {
   $first_name = $_POST['first_name'];
@@ -14,7 +11,7 @@ if (isset ($_POST['name'])  && isset($_POST['details']) && isset($_POST['sku']) 
 
 
 		mysqli_query($connection, "INSERT INTO people(first_name, last_name, city) VALUES(:first_name, :last_name, :city)");
-  }
+  
 }
  ?>
 <?php require 'header.php'; ?>

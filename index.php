@@ -62,7 +62,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 <table id="table" align="center"></table>
 
 	  <li >
-        <a href="studentAdd.php">New Student <span>(current)</span></a>
+        <a href="studentAdd.php">Create New Student </a>
       </li>
 
 </body>
