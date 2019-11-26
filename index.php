@@ -53,7 +53,7 @@ $db = substr($url["path"], 1);
 $connection = new mysqli($server, $username, $password, $db);
 
 
-$sql = 'SELECT * FROM SELECT * FROM people';
+$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 /*
