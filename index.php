@@ -43,14 +43,19 @@ static $dailyOrders = 0;
 //$people = $statement->fetchAll(PDO::FETCH_OBJ);
 
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+//$url = parse_url(getenv("mysql://b73b7a0286f36e:3f079b57@us-cdbr-iron-east-05.cleardb.net/heroku_7907a8bdd4fde12?reconnect=true"));
 
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
+$host = 'us-cdbr-iron-east-05.cleardb.net';
+$db = 'heroku_7907a8bdd4fde12';
+$username = 'b73b7a0286f36e';
+$password = '3f079b57';
 
-$connection = new mysqli($server, $username, $password, $db);
+//$server = $url["host"];
+//$username = $url["user"];
+//$password = $url["pass"];
+//$db = substr($url["path"], 1);
+
+$connection = new mysqli($host, $username, $password, $db);
 
 
 $sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
