@@ -1,6 +1,10 @@
 <?php
 require 'conndb.php';
 
+$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
+$result = mysqli_query($connection,$sql);
+$people = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
 $message = '';
 if (isset ($_POST['name'])  && isset($_POST['details']) && isset($_POST['sku']) && isset($_POST['price'])) {
   $first_name = $_POST['first_name'];
@@ -10,7 +14,8 @@ if (isset ($_POST['name'])  && isset($_POST['details']) && isset($_POST['sku']) 
     //$id = $_GET['id'];
 
 
-		mysqli_query($connection, "INSERT INTO heroku_7907a8bdd4fde12.people(first_name, last_name, city) VALUES('$first_name', '$last_name', 'portage')");
+
+		mysqli_query($connection, "INSERT INTO people(first_name, last_name, city) VALUES('$first_name', '$last_name', 'portage')");
   
 }
  ?>
