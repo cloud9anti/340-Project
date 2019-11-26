@@ -42,9 +42,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
     <body>
 
-        <h2>Courses</h2>
 
-        <a href="/" id="home" onclick="link('home')"> Student Page</a>
 
         <style>
             table {
