@@ -70,7 +70,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
     <div class="wrapper">
         <h2>Login</h2>
-        <p>Please fill in your credentials to login. Hint - Username: professor Password: password</p>
+        <p>Please fill in your credentials to login. </p>
+		<h3> Hint - Username: professor Password: password</h3>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
@@ -85,9 +86,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-		  <li class="nav-item active">
-			<a class="navbar-brand" href="home.php">Login <span class="sr-only">(current)</span></a>
-		  </li>
+
         </form>
     </div>    
 </body>
