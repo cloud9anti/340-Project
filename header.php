@@ -36,14 +36,11 @@
 	  <li class="nav-item active">
         <a class="navbar-brand" href="courses.php">[Courses] <span class="sr-only">(current)</span></a>
       </li>
-	  <li class="nav-item active">
-        <a class="navbar-brand" href="enrolledCourses.php">[Enrolled Courses] <span class="sr-only">(current)</span></a>
-      </li>
+
 	  <li class="nav-item active">
         <a class="navbar-brand" href="login.php">[Login] <span class="sr-only">(current)</span></a>
       </li>
 
-	  <h1>   ------------------------------</h1>
 
 
       
