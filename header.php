@@ -8,7 +8,7 @@
 
 <html lang="en">
   <head>
-    <title>Professor Grading Website</title>
+    <title>Welcome, Professor</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -40,7 +40,7 @@
         <a class="navbar-brand" href="enrolledCourses.php">[Enrolled Courses] <span class="sr-only">(current)</span></a>
       </li>
 	  <li class="nav-item active">
-        <a class="navbar-brand" href="people.php">[People] <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="login.php">[Login] <span class="sr-only">(current)</span></a>
       </li>
 
 	  <h1>   ------------------------------</h1>
