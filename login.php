@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 
                     
 
-                        if(password_verify($password, 'password')){
+                        if ($password == 'password'){
                             // Password is correct, so start a new session
                             session_start();
 
