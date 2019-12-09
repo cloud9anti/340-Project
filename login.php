@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 
                     
 
-                        if ($password == 'password'){
+                        if ($password == 'password' && $username == 'professor'){
                             // Password is correct, so start a new session
                             session_start();
 
@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 							
                         } else{
                             // Display an error message if password is not valid
-                            $password_err = "The password you entered was not valid.";
+                            $password_err = "The username and password you entered was not valid.";
                         }
                     
 
