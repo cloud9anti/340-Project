@@ -3,7 +3,7 @@
 session_start();
 
 require 'conndb.php';
-
+require 'header.php';
 
 
 
@@ -47,7 +47,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
         <div>
             <td><button type="button">SUBMIT</button></td>
 				  <li class="nav-item active">
-        <a href="login.php">Submit <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="home.php">[Login] <span class="sr-only">(current)</span></a>
       </li>
         </div>
         <br> <br>
