@@ -58,26 +58,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
 
-    // Check input errors before inserting in database
-    if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
-	   
-        // Prepare an insert statement
-		$currentDate = gmdate('Y-m-d h:m:s \G\M\T', time());
-        $sql = "INSERT INTO users (username, password, created_at, admin) VALUES (?, ?, '$currentDate', 'user')";
-
-        if($stmt = mysqli_prepare($link, $sql)){
-	                 echo "errorrrrr";
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
-            
-			
-
-				function password_hash($plain_pw)
-{
-    // (optional) change logic here for different hash algorithm
-    //return password_hash($plain_pw, PASSWORD_DEFAULT);
-    return md5($plain_pw);
 }
+
 ?>
 
 <html lang="en">
