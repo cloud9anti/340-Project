@@ -35,18 +35,17 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
             <table style="width:100%">
 			<tr>
-			<th> First Name </th>
-			<th> Last Name </th>
-			<th> City </th>
+			<th> Student ID </th>
+			<th>   </th>
+			<th>  </th>
 			
 			</tr>
 			
 			
 			
                 <tr>
-                    <td><?php echo $people['first_name']; ?></td>
-                    <td><?php echo $people['last_name']; ?></td>
-                    <td><?php echo $people['city']; ?></td>
+                    <td><?php echo $people['people_id']; ?></td>
+
                 </tr>
 	<?php 
 	
@@ -59,9 +58,8 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 						?>
 						
                 <tr>
-                    <td><?php echo $people['first_name']; ?></td>
-                    <td><?php echo $people['last_name']; ?></td>
-                    <td><?php echo $people['city']; ?></td>
+                    <td><?php echo $people['people_id']; ?></td>
+
                 </tr>
               
           			<?php } ?>
