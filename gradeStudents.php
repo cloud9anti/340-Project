@@ -101,7 +101,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 						?>
 
-       <h1> Total Grade: <?php echo $people['score']; ?>%</h1>
+       <h1 align="center"> Total Grade: <?php echo $people['score']; ?>%</h1>
 
 <form method="post" action = "gradeStudents.php">	
 	<select name="totalGrade">
