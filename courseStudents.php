@@ -28,7 +28,7 @@ if (isset ($_POST['student_id'])) {
 	<title>Student List</title>
 </head>
 <body>
-	<h1>Welcome professor, please select a student enrolled in <?php echo $_POST['course']; ?> !!!!</h1>
+	<h1>Please select a student enrolled in <?php echo $_POST['course']; ?> !</h1>
 	
 
         <style>
