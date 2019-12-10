@@ -42,7 +42,8 @@ if (isset ($_POST['course'])) {
 	<form method="post">
         <table style="width:100%">
             <tr>
-                <th>Course</th>
+                <th>Course</th
+				<th>Department</th>
                 <td>View</td>
                 <th>Edit</th>
                 <th>Remove</th>
@@ -59,18 +60,17 @@ if (isset ($_POST['course'])) {
 								
 						<tr>
 							<td><?php echo $people['course_name']; ?></td>
-							<td><?php echo $people['course_id']; ?></td>
-							<td> HELLO </td>
+							<td><?php echo $people['department']; ?></td>
+							<td><button href="courseStudents.php" type="submit">View Course</button></td>
+							<td><button type="button">EDIT</button></td>
+							<td><button type="button">DELETE</button></td>
 						</tr>
 									<?php } ?>
 						
 					  
-			<div class="form-group">
-             <td><button href="courseStudents.php" type="submit">View Course</button></td>
-			</div>
 
-                <td><button type="button">EDIT</button></td>
-                <td><button type="button">DELETE</button></td>
+
+
   
 
 							
