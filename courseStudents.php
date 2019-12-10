@@ -135,9 +135,13 @@ if (isset ($_POST['btnDelete'])) {
 
 <table id="table" align="center"></table>
 
-	  <li >
-        <a href="studentAdd.php">Create New Student </a>
-      </li>
+
+			<form method="post" action = "delete.php">
+					<input type="hidden" name="course" value="<?= $courseName?>"> 
+					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
+					<input type="hidden" name="student_id" value="<?= $people['people_id']?>"> 				
+					<input href="delete.php" value="View Grades" type="submit"></input>
+			</form>
 
 </body>
 
