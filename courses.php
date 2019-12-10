@@ -58,6 +58,7 @@ if (isset($_POST['btnDelete'])) {
                 <th>Course</th>
 				<th>Department</th>
                 <td>View</td>
+				<td>Delete</td>
             </tr>
 
 			
@@ -69,7 +70,7 @@ if (isset($_POST['btnDelete'])) {
 
 							<input type="hidden" name="course" value="<?= $people['course_name']?>"> 
 							<input type="hidden" name="course_id" value="<?= $people['course_id']?>"> 
-							<input type="submit" name="btnDelete" value="Delete" />
+							<input type="submit" name="btnDelete" value="Delete" >
 							<td><input href="courseStudents.php" value="View Course" type="submit"></input></td>
 
 						</tr>
@@ -89,7 +90,7 @@ if (isset($_POST['btnDelete'])) {
 
 							<input type="hidden" name="course" value="<?= $people['course_name']?>"> 
 							<input type="hidden" name="course_id" value="<?= $people['course_id']?>"> 
-							<input type="submit" name="btnDelete" value="<?= $people['course_id']?>">
+							<input type="submit" name="btnDelete" value="delete">
 							<td><input href="courseStudents.php" value="View Course" type="submit"></input></td>
 					
 
