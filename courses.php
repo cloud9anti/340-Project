@@ -8,7 +8,7 @@ require 'header.php';
 
 
 
-$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.courses';
+$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.course';
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
@@ -26,27 +26,7 @@ if (isset ($_POST['course']) )) {
 
 <h1>Hello Professor, Please Insert, Edit, or Delete Courses from your Schedule</h1>
 <form>
-    <!--   <fieldset>
-            <legend id="form">Choose your exercise:</legend>
-            <input type="number" id="ID" hidden="true" />
-            Name: <input type="text" name="workoutName" id="name" value="" />
-            <br>
-            Reps: <input type="number" name="workoutReps" id="reps" value="0" />
-            <br>
-            Weight: <input type="number" name="workoutWeight" id="weight" value="0" />
-            <br>
-            Check if using lbs <input type="checkbox" name="workoutLbs" id="lbs" />
-            <br>
-            Date: <input type="date" name="workoutDate" id="date" value="2019-08-10" />
-            <br>
 
-            <input type="button" value="Add" id="add" />
-
-            <input type="button" value="Submit Edit" id="submitEdit" hidden="true" />
-
-        </fieldset>
-    </form>
-    -->
 
     <body>
 
@@ -66,8 +46,18 @@ if (isset ($_POST['course']) )) {
                 <th>Remove</th>
             </tr>
 			
-			
+			<?php
+	while ($people= mysqli_fetch_array($result)) {
 
+						?>
+						
+                <tr>
+                    <td><?php echo $people['course_name']; ?></td>
+                    <td><?php echo $people['course_id']; ?></td>
+                    <td><?php echo $people['course_name']; ?></td>
+                </tr>
+              
+          			<?php } ?>
             <tr>
                 <td>CS 161</td>
      
