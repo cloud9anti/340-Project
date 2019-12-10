@@ -8,15 +8,17 @@ require 'header.php';
 
 
 
-$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
-$result = mysqli_query($connection,$sql);
-$people = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
 
 
 if ($_GET["lastname"] != "") {
-echo $_GET["lastname"];
-echo "test";
+$sql = "SELECT * FROM heroku_7907a8bdd4fde12.people WHERE last_name = '$_GET["lastname"]'";
+} else {
+$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
 }
+
+$result = mysqli_query($connection,$sql);
+$people = mysqli_fetch_array($result, MYSQLI_ASSOC);
  ?>
 
 
