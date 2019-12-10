@@ -92,7 +92,7 @@ if (isset($_POST['btnDelete'])) {
 
 							<input type="hidden" name="course" value="<?= $people['course_name']?>"> 
 							<input type="hidden" name="course_id" value="<?= $people['course_id']?>"> 
-							<td><input type="submit" name="btnDelete" value="delete"></td>
+							<td><input href="courses.php" type="submit" name="btnDelete" value="Delete"></td>
 							<td><input href="courseStudents.php" value="View Course" type="submit"></input></td>
 					
 
