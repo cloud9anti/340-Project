@@ -47,11 +47,7 @@ if (isset ($_POST['course'])) {
                 <th>Edit</th>
                 <th>Remove</th>
             </tr>
-            <tr>
-                <td>CS 161</td>
      
-
-
 			<?php 
 
 
@@ -79,7 +75,7 @@ if (isset ($_POST['course'])) {
 			</form>
                 <td><button type="button">EDIT</button></td>
                 <td><button type="button">DELETE</button></td>
-            </tr>
+  
 							<?php } ?>
         </table>
         <div>
