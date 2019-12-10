@@ -66,18 +66,7 @@ if (isset ($_POST['course']) )) {
                 <th>Remove</th>
             </tr>
 			
-			<?php
-	while ($people= mysqli_fetch_array($result)) {
-
-						?>
-						
-                <tr>
-                    <td><?php echo $people['course_name']; ?></td>
-                    <td><?php echo $people['course_id']; ?></td>
-                    <td><?php echo $people['course_name']; ?></td>
-                </tr>
-              
-          			<?php } ?>
+		
             <tr>
                 <td>CS 161</td>
      
