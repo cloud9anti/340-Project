@@ -13,6 +13,20 @@ $sql = "SELECT * FROM heroku_7907a8bdd4fde12.grade WHERE course_id = '$courseID'
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
+if (isset ($_POST['totalGrade'])) {
+
+	$totalGrade = $_POST['totalGrade'];
+	
+
+	mysqli_query($connection, "UPDATE enrolledcourses('score') VALUES('$totalGrade') WHERE people_id = '$studentID' ");
+	header("location: gradeStudents.php");
+
+
+
+}
+
+
+
  ?>
 
 
@@ -76,8 +90,22 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 <table id="table" align="center"></table>
 
 	  <li >
-        <a href="studentAdd.php">Create New Student </a>
+       <h1> Total Grade: %</h1>
       </li>
+<form method="post" action = "gradeStudents.php">	
+	<select>
+
+	<?php
+		for ($i=1; $i<=100; $i++)
+		{
+			?>
+				<option name="totalGrade" value="<?php echo $i;?>"><?php echo $i;?></option>
+			<?php
+		}
+	?>
+	</select
+	<input href="gradeStudents.php" value="View Grades" type="submit"></input>
+</form>
 
 </body>
 
