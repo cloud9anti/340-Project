@@ -3,7 +3,7 @@ require 'conndb.php';
 require 'header.php';
 
 
-  $deleteID = $_POST['deleteID'];
+  $deleteID = $_POST['btnDelete'];
   
   echo "testing";
 
