@@ -8,7 +8,7 @@ require 'header.php';
 
 
 
-$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
+$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.course';
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
@@ -58,8 +58,8 @@ if (isset ($_POST['course'])) {
 								?>
 								
 						<tr>
-							<td><?php echo $people['first_name']; ?></td>
-							<td><?php echo $people['people_id']; ?></td>
+							<td><?php echo $people['course_name']; ?></td>
+							<td><?php echo $people['course_id']; ?></td>
 							<td> HELLO </td>
 						</tr>
 									<?php } ?>
