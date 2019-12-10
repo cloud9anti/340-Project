@@ -1,7 +1,7 @@
 <?php
 
 require 'conndb.php';
-session_start();
+
 
 $sql = 'SELECT * FROM heroku_7907a8bdd4fde12.grade';
 $result = mysqli_query($connection,$sql);
@@ -27,7 +27,7 @@ if (isset ($_POST['course_id'])  && isset($_POST['grade_name'])) {
 mysqli_query($connection, "UPDATE people SET course_id='$course_id', course_name='$course_name', grade_name='$grade_name', building='$building', room_number='$room_number' WHERE grade_id = '$myGrade'");
 
   header("Location: assignments.php");
-//  }
+
 }
 
 						//Include assignments table
