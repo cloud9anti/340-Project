@@ -87,7 +87,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
         <br> <br>
 	  <li >
-        <a href="assignmentAdd.php">Create New Course </a>
+        <a href="assignmentAdd.php">Create New Assignment </a>
       </li>
 
 
