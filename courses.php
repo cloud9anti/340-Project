@@ -76,7 +76,7 @@ if (isset ($_POST['course'])) {
 			while ($people= mysqli_fetch_array($result)) {
 
 								?>
-				<form method="post" action = "courseStudnets.php">
+				<form method="post" action = "courseStudents.php">
 						<tr>
 							<td><?php echo $people['course_name']; ?></td>
 							<td><?php echo $people['department']; ?></td>
