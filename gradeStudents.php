@@ -21,7 +21,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	<title>Student List</title>
 </head>
 <body>
-	<h1>Welcome professor, please select a student enrolled in <?php echo $_POST['course']; ?> !!!!</h1>
+	<h1>Viewing Student ID: <?php echo $_POST['student_id']; ?> 's grades.</h1>
 	
 
         <style>
