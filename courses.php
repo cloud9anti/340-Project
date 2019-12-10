@@ -12,8 +12,16 @@ $sql = 'SELECT * FROM heroku_7907a8bdd4fde12.course';
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
+if (isset($_POST['btnDelete'])) {
 
-if (isset ($_POST['course'])) {
+  $deleteID = $_POST['deleteID'];
+  
+  echo "testing";
+
+ mysqli_query($connection, "DELETE FROM heroku_7907a8bdd4fde12.course WHERE course_id = '$deleteID'");
+   header("Location: courses.php");
+
+} else if (isset ($_POST['course'])) {
 
   $course = $_POST['course'];
   header("location: courseStudents.php");
