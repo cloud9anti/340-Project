@@ -13,9 +13,10 @@ $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 
-
+if ($_GET["lastname"] != "") {
 echo $_GET["lastname"];
-
+echo "test";
+}
  ?>
 
 
