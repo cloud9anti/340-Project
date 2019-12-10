@@ -66,7 +66,7 @@ if (isset ($_POST['course']) )) {
                 <th>Remove</th>
             </tr>
 			
-			
+			<?php
 	while ($people= mysqli_fetch_array($result)) {
 
 						?>
