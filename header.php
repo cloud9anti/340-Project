@@ -24,11 +24,9 @@
     <ul class="navbar-nav mr-auto">
 
 	<!-- Navigation buttons (top left) -->
-	  <li class="nav-item active">
-        <a class="navbar-brand" href="home.php">[Home] <span class="sr-only">(current)</span></a>
-      </li>
+
       <li class="nav-item active">
-        <a class="navbar-brand" href="index.php">[Student List] <span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="home.php">[Student List] <span class="sr-only">(current)</span></a>
       </li>
 	  <li class="nav-item active">
         <a class="navbar-brand" href="assignments.php">[Assignments] <span class="sr-only">(current)</span></a>
