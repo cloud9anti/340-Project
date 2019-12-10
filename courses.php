@@ -63,7 +63,7 @@ if (isset ($_POST['course'])) {
 							<td><?php echo $people['department']; ?></td>
 
 							<input type="hidden" name="Product_ID" value="<?= $products['Product_ID']?>"> 
-							<td><input href="courseStudents.php" type="submit">View Course</input></td>
+							<td><input href="courseStudents.php" type="View Course"></input></td>
 							<td><button type="button">EDIT</button></td>
 							<td><button type="button">DELETE</button></td>
 						</tr>
