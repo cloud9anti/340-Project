@@ -8,7 +8,7 @@ require 'header.php';
 
 
 $courseID = $_POST['course_id']; 
-$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.enrolledcourses WHERE course_id = "$courseID"';
+$sql = "SELECT * FROM heroku_7907a8bdd4fde12.enrolledcourses WHERE course_id = '$courseID'";
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
