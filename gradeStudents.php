@@ -89,7 +89,7 @@ if (isset ($_POST['totalGrade'])) {
 
 <table id="table" align="center"></table>
 
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
        <h1> Total Grade: %</h1>
 
 <form method="post" action = "gradeStudents.php">	
@@ -103,8 +103,8 @@ if (isset ($_POST['totalGrade'])) {
 			<?php
 		}
 	?>
-	</select
-	<a><input href="gradeStudents.php" value="View Grades" type="submit"> asd</input></a>
+	</select>
+	<input href="gradeStudents.php" value="View Grades" type="submit"> asd</input>
 </form>
 
 </body>
