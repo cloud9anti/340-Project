@@ -12,7 +12,8 @@ require 'header.php';
 
 
 if ($_GET["lastname"] != "") {
-$sql = "SELECT * FROM heroku_7907a8bdd4fde12.people WHERE last_name = '$_GET["lastname"]'";
+	$lastName = $_GET["lastname"];
+$sql = "SELECT * FROM heroku_7907a8bdd4fde12.people WHERE last_name = '$lastName'";
 } else {
 $sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
 }
