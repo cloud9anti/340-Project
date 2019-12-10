@@ -40,6 +40,9 @@ if (isset ($_POST['student_id'])) {
             <table style="width:90%">
 			<tr>
 			<th> Student ID </th>
+			<th> View </th>
+			<th> Edit </th>
+			<th> Delete </th>
 
 			
 			</tr>
