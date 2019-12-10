@@ -29,6 +29,9 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
             <tr>
 			<th> Assignment Name </th>
 			<th> Assignment Type </th>
+			<th> Course ID </th>
+			<th> Building </th>
+			<th> Room Number </th>
                 <th>Edit</th>
                 <th>Remove</th>
             </tr>
@@ -38,9 +41,13 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
                 <tr>
                     <td><?php echo $people['grade_name']; ?></td>
                     <td><?php echo $people['grade_type']; ?></td>
+                    <td><?php echo $people['course_id']; ?></td>
+                    <td><?php echo $people['building']; ?></td>
+                    <td><?php echo $people['room_number']; ?></td>
 					
 					<input type="hidden" name="course" value="<?= $courseName?>"> 
 					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
+
 					<td><button type="button">EDIT</button></td>
 					<td><button type="button">DELETE</button></td>
                 </tr>
@@ -57,6 +64,9 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
                 <tr>
                     <td><?php echo $people['grade_name']; ?></td>
                     <td><?php echo $people['grade_type']; ?></td>
+                    <td><?php echo $people['course_id']; ?></td>
+                    <td><?php echo $people['building']; ?></td>
+                    <td><?php echo $people['room_number']; ?></td>
 					
 					<input type="hidden" name="course" value="<?= $courseName?>"> 
 					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
