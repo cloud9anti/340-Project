@@ -74,7 +74,7 @@ if (isset ($_POST['course'])) {
 			<div class="form-group">
              <td><button href="courseStudents.php" type="submit">View Course</button></td>
 			</div>
-			</form>
+
                 <td><button type="button">EDIT</button></td>
                 <td><button type="button">DELETE</button></td>
   
@@ -86,6 +86,7 @@ if (isset ($_POST['course'])) {
                 <th>Edit</th>
                 <th>Remove</th>
             </tr>
+						</form>
 			
         </table>
         <div>
