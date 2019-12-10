@@ -44,7 +44,29 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 					<td><button type="button">EDIT</button></td>
 					<td><button type="button">DELETE</button></td>
                 </tr>
-              </form>			
+              </form>		
+
+	<?php 
+	
+
+	while ($people= mysqli_fetch_array($result)) {
+
+						?>
+						
+			<form method="post" action = "gradeStudents.php">
+                <tr>
+                    <td><?php echo $people['grade_name']; ?></td>
+                    <td><?php echo $people['grade_type']; ?></td>
+					
+					<input type="hidden" name="course" value="<?= $courseName?>"> 
+					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
+					<td><button type="button">EDIT</button></td>
+					<td><button type="button">DELETE</button></td>
+                </tr>
+              </form>							
+						
+						
+          			<?php } ?>
      
         </table>
         <div>
