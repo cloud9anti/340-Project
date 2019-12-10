@@ -59,7 +59,7 @@ if (isset ($_POST['course'])) {
 								
 						<tr>
 							<td><?php echo $people['course_name']; ?></td>
-							<td><?php echo $people['course_name']; ?></td>
+							<td><?php echo "123"?></td>
 							<td><?php echo $people['course_id']; ?></td>
 							<td> HELLO </td>
 						</tr>
