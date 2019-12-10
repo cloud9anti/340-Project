@@ -93,18 +93,18 @@ if (isset ($_POST['totalGrade'])) {
        <h1> Total Grade: %</h1>
 
 <form method="post" action = "gradeStudents.php">	
-	<select>
+	<select name="totalGrade">
 
 	<?php
 		for ($i=1; $i<=100; $i++)
 		{
 			?>
-				<option name="totalGrade" value="<?php echo $i;?>"><?php echo $i;?></option>
+				<option  value="<?php echo $i;?>"><?php echo $i;?></option>
 			<?php
 		}
 	?>
 	</select>
-	<input href="gradeStudents.php" value="View Grades" type="submit"> asd</input>
+	<input href="gradeStudents.php" value="Change Score" type="submit"> </input>
 </form>
 
 </body>
