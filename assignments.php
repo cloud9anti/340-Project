@@ -83,10 +83,14 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
             <td><button type="button">SUBMIT</button></td>
         </div>
         <br> <br>
-        <td><button type="button">ADD NEW ASSIGNMENT</button></td>
+	  <li >
+        <a href="assignmentAdd.php">Create New Course </a>
+      </li>
 
 
     <table id="table" align="center"></table>
+	
+	
 
 
     </body>
