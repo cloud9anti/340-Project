@@ -65,6 +65,7 @@ if (isset ($_POST['course'])) {
 							<input type="hidden" name="course" value="<?= $people['course_name']?>"> 
 
 							<td><input href="courseStudents.php" value="View Course" type="submit"></input></td>
+							<button type="submit" method="post" href="courseStudents.php"  >Add To Cart</button>
 							<td><button type="button">EDIT</button></td>
 							<td><button type="button">DELETE</button></td>
 						</tr>
