@@ -18,7 +18,7 @@ if (isset ($_POST['totalGrade'])) {
 	$totalGrade = $_POST['totalGrade'];
 	
 
-	mysqli_query($connection, "UPDATE enrolledcourses('score') VALUES('$totalGrade') WHERE people_id = '$studentID' ");
+	mysqli_query($connection, "UPDATE enrolledcourses SET score ='$totalGrade' WHERE people_id = '$studentID' ");
 	header("location: gradeStudents.php");
 
 
@@ -104,7 +104,7 @@ if (isset ($_POST['totalGrade'])) {
 		}
 	?>
 	</select>
-	<input href="gradeStudents.php" value="Change Score" type="submit"> </input>
+	<input href="home.php" value="Change Score" type="submit"> </input>
 </form>
 
 </body>
