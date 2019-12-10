@@ -66,7 +66,8 @@ if (isset ($_POST['course']) )) {
                 <th>Remove</th>
             </tr>
 			
-		
+			
+
             <tr>
                 <td>CS 161</td>
      
