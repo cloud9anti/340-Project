@@ -36,7 +36,7 @@ if (isset ($_POST['totalGrade'])) {
 </head>
 <body>
 	<h1>Viewing Student ID: <?php echo $_POST['student_id']; ?> 's grades.</h1>
-	 <?php echo $studentID; ?> 
+
 
 
         <style>
@@ -90,7 +90,18 @@ if (isset ($_POST['totalGrade'])) {
 <table id="table" align="center"></table>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-       <h1> Total Grade: %</h1>
+
+
+<?php
+
+
+$sql = "SELECT * FROM heroku_7907a8bdd4fde12.enrolledcourses WHERE people_id = '$studentID'";
+$result = mysqli_query($connection,$sql);
+$people = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+						?>
+
+       <h1> Total Grade: <?php echo $people['score']; ?>%</h1>
 
 <form method="post" action = "gradeStudents.php">	
 	<select name="totalGrade">
