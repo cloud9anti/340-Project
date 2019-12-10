@@ -53,28 +53,17 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
         <table style="width:100%">
             <tr>
                 <th>Course</th>
-                <td>Insert</td>
+                <td>View</td>
                 <th>Edit</th>
                 <th>Remove</th>
             </tr>
             <tr>
                 <td>CS 161</td>
-                <td><button type="button">INSERT</button></td>
+                <td><button  href="courseStudents.php" type="button">View Course</button></td>
                 <td><button type="button">EDIT</button></td>
                 <td><button type="button">DELETE</button></td>
             </tr>
-            <tr>
-                <td>CS 162</td>
-                <td><button type="button">INSERT</button></td>
-                <td><button type="button">EDIT</button></td>
-                <td><button type="button">DELETE</button></td>
-            </tr>
-            <tr>
-                <td>CS 290</td>
-                <td><button type="button">INSERT</button></td>
-                <td><button type="button">EDIT</button></td>
-                <td><button type="button">DELETE</button></td>
-            </tr>
+
         </table>
         <div>
             <td><button type="button">SUBMIT</button></td>
