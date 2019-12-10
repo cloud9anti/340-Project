@@ -24,20 +24,12 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	
 
 
-            <h2>Student List</h2>
-		<form action="">
-		  Search by Last name:<br>
-		  <input type="text" name="lastname" value=""><br><br>
-		  <input type="submit" value="Search">
-
-		</form>
-
 
             <table style="width:100%">
 			<tr>
 			<th> Student ID </th>
-			<th>   </th>
-			<th>  </th>
+			<th> a  </th>
+			<th>a</th>
 			
 			</tr>
 			
