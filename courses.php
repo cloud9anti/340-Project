@@ -45,8 +45,6 @@ if (isset ($_POST['course'])) {
                 <th>Course</th>
 				<th>Department</th>
                 <td>View</td>
-                <th>Edit</th>
-                <th>Remove</th>
             </tr>
 
 			
