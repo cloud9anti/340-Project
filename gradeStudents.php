@@ -100,8 +100,8 @@ $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 						?>
-
-       <h1 align="center"> Total Grade: <?php echo $people['score']; ?>%</h1>
+<table align="center">
+       <h1 > Total Grade: <?php echo $people['score']; ?>%</h1>
 
 <form method="post" action = "gradeStudents.php">	
 	<select name="totalGrade">
@@ -115,8 +115,10 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 		}
 	?>
 	</select>
-	<input href="home.php" value="Change Score" type="submit"> </input>
+	<input href="home.php" value="Change Grade" type="submit"> </input>
 </form>
+
+</table>
 
 </body>
 
