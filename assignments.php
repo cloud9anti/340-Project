@@ -6,7 +6,13 @@ require 'conndb.php';
 require 'header.php';
 
 
+if (isset ($_POST['edit'])) {
 
+
+  header("location: assignmentEdit.php");
+  
+
+}
 
 $sql = 'SELECT * FROM heroku_7907a8bdd4fde12.grade';
 $result = mysqli_query($connection,$sql);
@@ -36,7 +42,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
             </tr>
 			
 
-			<form method="post" action = "gradeStudents.php">
+			<form method="post" action = "assignmentEdit.php">
                 <tr>
                     <td><?php echo $people['grade_name']; ?></td>
                     <td><?php echo $people['grade_type']; ?></td>
@@ -44,10 +50,10 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
                     <td><?php echo $people['building']; ?></td>
                     <td><?php echo $people['room_number']; ?></td>
 					
-					<input type="hidden" name="course" value="<?= $courseName?>"> 
+					<input type="hidden" name="edit" value="<?= $people['grade_id']?>"> 
 					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
 
-					<td><button type="button">EDIT/DELETE</button></td>
+					<td><input href="assignmentEdit.php" value="EDIT/DELETE" type="submit"></input></td>
 
                 </tr>
               </form>		
@@ -59,7 +65,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 						?>
 						
-			<form method="post" action = "gradeStudents.php">
+			<form method="post" action = "assignmentEdit.php">
                 <tr>
                     <td><?php echo $people['grade_name']; ?></td>
                     <td><?php echo $people['grade_type']; ?></td>
@@ -67,9 +73,9 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
                     <td><?php echo $people['building']; ?></td>
                     <td><?php echo $people['room_number']; ?></td>
 					
-					<input type="hidden" name="course" value="<?= $courseName?>"> 
+					<input type="hidden" name="edit" value="<?= $people['grade_id']?>"> 		
 					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
-					<td><button type="button">EDIT/DELETE</button></td>
+					<td><input href="assignmentEdit.php" value="EDIT/DELETE" type="submit"></input></td>
                 </tr>
               </form>							
 						
