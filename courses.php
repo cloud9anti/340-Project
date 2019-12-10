@@ -16,6 +16,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 if (isset ($_POST['course'])) {
 
   $course = $_POST['course'];
+  header("location: courseStudents.php");
 
 
 
