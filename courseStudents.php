@@ -88,54 +88,13 @@ if (isset ($_POST['btnDelete'])) {
 
 
 
-           <table style="width:90%">
-			<tr>
-			<th> Student ID </th>
-			<th> Delete </th>
 
-			
-			</tr>
-			
-			
-			<form method="post" action = "delete.php">
-                <tr>
-                    <td><?php echo $people['people_id']; ?></td>
-					<input type="hidden" name="course" value="<?= $courseName?>"> 
-					<input type="hidden" name="btnDelete" value="<?= $courseID?>"> 
-					<input type="hidden" name="student_id" value="<?= $people['people_id']?>"> 				
-					<td><input href="delete.php" value="View Grades" type="submit"></input></td>
-					<td><button type="button">EDIT</button></td>
-					<td><button type="button">DELETE</button></td>
-                </tr>
-              </form>			
-
-	<?php 
-	
-	
-
-
-
-	while ($people= mysqli_fetch_array($result)) {
-
-						?>
-			<form method="post" action = "delete.php">
-                <tr>
-                    <td><?php echo $people['people_id']; ?></td>
-					<input type="hidden" name="course" value="<?= $courseName?>"> 
-					<input type="hidden" name="btnDelete" value="<?= $courseID?>"> 
-					<input type="hidden" name="student_id" value="<?= $people['people_id']?>"> 				
-					<td><input href="delete.php" value="View Grades" type="submit"></input></td>
-					<td><button type="button">EDIT</button></td>
-					<td><button type="button">DELETE</button></td>
-                </tr>
-              </form>
-          			<?php } ?>
-            </table>
 
 <table id="table" align="center"></table>
 
 
 			<form method="post" action = "delete.php">
+			<h1> Delete This Course </h1>
 					<input type="hidden" name="course" value="<?= $courseName?>"> 
 					<input type="hidden" name="btnDelete" value="<?= $courseID?>"> 
 					<input type="hidden" name="student_id" value="<?= $people['people_id']?>"> 				
