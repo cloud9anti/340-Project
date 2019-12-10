@@ -14,7 +14,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 
 
-
+echo $_GET["lastname"];
 
  ?>
 
