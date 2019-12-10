@@ -59,7 +59,18 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
             </tr>
             <tr>
                 <td>CS 161</td>
-                <td><button  href="courseStudents.php" type="button">View Course</button></td>
+     
+			<form method="post">
+     
+			<div class="form-group">
+			  <label for="course">Course</label>
+			  <input type="text" name="course" id="course" class="form-control">
+			</div>
+			
+			<div class="form-group">
+             <td><button href="courseStudents.php" type="submit">View Course</button></td>
+			</div>
+			</form>
                 <td><button type="button">EDIT</button></td>
                 <td><button type="button">DELETE</button></td>
             </tr>
