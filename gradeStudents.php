@@ -18,7 +18,7 @@ if (isset ($_POST['totalGrade'])) {
 	$totalGrade = $_POST['totalGrade'];
 	
 
-	mysqli_query($connection, "UPDATE enrolledcourses SET score ='$totalGrade' WHERE people_id = 1 ");
+	mysqli_query($connection, "UPDATE enrolledcourses SET score ='$totalGrade' WHERE people_id = '$studentID' ");
 	header("location: home.php");
 
 
