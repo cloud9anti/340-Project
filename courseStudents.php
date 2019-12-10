@@ -17,11 +17,7 @@ if (isset ($_POST['btnDelete'])) {
   header("location: delete.php");
   
 
-} else if (isset ($_POST['student_id'])) {
-
-  header("location: gradeStudents.php");
-
-}
+} 
  ?>
 
 
