@@ -39,7 +39,7 @@ if (isset ($_POST['course'])) {
                 border: 1px solid black;
             }
         </style>
-
+	<form method="post">
         <table style="width:100%">
             <tr>
                 <th>Course</th>
@@ -50,7 +50,7 @@ if (isset ($_POST['course'])) {
             <tr>
                 <td>CS 161</td>
      
-			<form method="post">
+
 
 			<?php 
 
