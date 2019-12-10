@@ -13,14 +13,7 @@ $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 
-if (isset ($_POST['course']) )) {
-
-  $course = $_POST['course'];
-
-
-
-}
-               
+         
 
  ?>
 
