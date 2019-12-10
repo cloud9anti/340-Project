@@ -87,11 +87,14 @@ if (isset ($_POST['btnDelete'])) {
             </table>
 
 
+
+
+
+
+
            <table style="width:90%">
 			<tr>
 			<th> Student ID </th>
-			<th> View </th>
-			<th> Edit </th>
 			<th> Delete </th>
 
 			
@@ -119,11 +122,11 @@ if (isset ($_POST['btnDelete'])) {
 	while ($people= mysqli_fetch_array($result)) {
 
 						?>
-			<form method="post" action = "gradeStudents.php">
+			<form method="post" action = "delete.php">
                 <tr>
                     <td><?php echo $people['people_id']; ?></td>
 					<input type="hidden" name="course" value="<?= $courseName?>"> 
-					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
+					<input type="hidden" name="btnDelete" value="<?= $courseID?>"> 
 					<input type="hidden" name="student_id" value="<?= $people['people_id']?>"> 				
 					<td><input href="gradeStudents.php" value="View Grades" type="submit"></input></td>
 					<td><button type="button">EDIT</button></td>
@@ -138,7 +141,7 @@ if (isset ($_POST['btnDelete'])) {
 
 			<form method="post" action = "delete.php">
 					<input type="hidden" name="course" value="<?= $courseName?>"> 
-					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
+					<input type="hidden" name="btnDelete" value="<?= $courseID?>"> 
 					<input type="hidden" name="student_id" value="<?= $people['people_id']?>"> 				
 					<input href="delete.php" value="View Grades" type="submit"></input>
 			</form>
