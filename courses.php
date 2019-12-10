@@ -39,7 +39,7 @@ if (isset ($_POST['course'])) {
                 border: 1px solid black;
             }
         </style>
-	<form method="post" action = "courseStudents.php">
+
         <table style="width:100%">
             <tr>
                 <th>Course</th>
@@ -57,7 +57,7 @@ if (isset ($_POST['course'])) {
 			while ($people= mysqli_fetch_array($result)) {
 
 								?>
-								
+				<form method="post" action = "courseStudents.php">
 						<tr>
 							<td><?php echo $people['course_name']; ?></td>
 							<td><?php echo $people['department']; ?></td>
@@ -69,9 +69,10 @@ if (isset ($_POST['course'])) {
 							<td><button type="button">EDIT</button></td>
 							<td><button type="button">DELETE</button></td>
 						</tr>
+					</form>
 									<?php } ?>
 				
-						</form>
+
 			
         </table>
         <div>
