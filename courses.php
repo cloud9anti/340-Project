@@ -50,8 +50,6 @@ if (isset ($_POST['course'])) {
             </tr>
 
 			
-     
-			<?php 
 
 				<form method="post" action = "courseStudents.php">
 						<tr>
@@ -65,6 +63,10 @@ if (isset ($_POST['course'])) {
 							<td><button type="button">DELETE</button></td>
 						</tr>
 					</form>
+     
+			<?php 
+
+
 
 			while ($people= mysqli_fetch_array($result)) {
 

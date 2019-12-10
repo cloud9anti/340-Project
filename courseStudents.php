@@ -45,12 +45,6 @@ if (isset ($_POST['student_id'])) {
 			</tr>
 			
 			
-			
-
-	<?php 
-	
-	
-
 			<form method="post" action = "gradeStudents.php">
                 <tr>
                     <td><?php echo $people['people_id']; ?></td>
@@ -61,7 +55,13 @@ if (isset ($_POST['student_id'])) {
 					<td><button type="button">EDIT</button></td>
 					<td><button type="button">DELETE</button></td>
                 </tr>
-              </form>
+              </form>			
+
+	<?php 
+	
+	
+
+
 
 	while ($people= mysqli_fetch_array($result)) {
 
