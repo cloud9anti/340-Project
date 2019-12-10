@@ -97,7 +97,7 @@ if (isset ($_POST['btnDelete'])) {
 			</tr>
 			
 			
-			<form method="post" action = "gradeStudents.php">
+			<form method="post" action = "delete.php">
                 <tr>
                     <td><?php echo $people['people_id']; ?></td>
 					<input type="hidden" name="course" value="<?= $courseName?>"> 
