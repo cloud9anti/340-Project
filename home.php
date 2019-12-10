@@ -40,8 +40,13 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 		</form>
 
+        <style>
+            table {
+                border: 1px solid black;
+            }
+        </style>
 
-            <table style="width:100%">
+            <table style="width:90%">
 			<tr>
 			<th> First Name </th>
 			<th> Last Name </th>

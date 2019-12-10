@@ -84,6 +84,9 @@ if (isset ($_POST['course'])) {
 
 			
         </table>
+	  <li >
+        <a href="courseAdd.php">Create New Course </a>
+      </li>
 
     </body>
 
