@@ -17,13 +17,8 @@ if (isset ($_POST['course']) )) {
 
   $course = $_POST['course'];
 
-    //$id = $_GET['id'];
 
 
-
-		mysqli_query($connection, "INSERT INTO people(first_name, last_name, city) VALUES('$first_name', '$last_name', '$city')");
-		//mysqli_query($connection, "INSERT INTO `heroku_7907a8bdd4fde12`.`people` (`first_name`, `last_name`, `email`, `street`, `city`) VALUES ('as22d', 'as22d', 'as22d', 'a22sd', 'a22sd')");
-               header("location: courseStudents.php");
 }
                
 
