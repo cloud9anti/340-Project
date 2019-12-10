@@ -89,9 +89,9 @@ if (isset ($_POST['totalGrade'])) {
 
 <table id="table" align="center"></table>
 
-	  <li >
+<br><br><br><br><br><br><br>
        <h1> Total Grade: %</h1>
-      </li>
+
 <form method="post" action = "gradeStudents.php">	
 	<select>
 
