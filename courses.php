@@ -69,6 +69,7 @@ if (isset($_POST['btnDelete'])) {
 
 							<input type="hidden" name="course" value="<?= $people['course_name']?>"> 
 							<input type="hidden" name="course_id" value="<?= $people['course_id']?>"> 
+							<input type="submit" name="btnDelete" value="Delete" />
 							<td><input href="courseStudents.php" value="View Course" type="submit"></input></td>
 
 						</tr>
@@ -81,14 +82,14 @@ if (isset($_POST['btnDelete'])) {
 			while ($people= mysqli_fetch_array($result)) {
 
 								?>
-				<form method="post" action = "courseStudents.php">
+				<form method="post" action = "courses.php">
 						<tr>
 							<td><?php echo $people['course_name']; ?></td>
 							<td><?php echo $people['department']; ?></td>
 
 							<input type="hidden" name="course" value="<?= $people['course_name']?>"> 
 							<input type="hidden" name="course_id" value="<?= $people['course_id']?>"> 
-							<input type="submit" name="btnDelete" value="Delete" />
+							<input type="submit" name="btnDelete" value="<?= $people['course_id']?>">
 							<td><input href="courseStudents.php" value="View Course" type="submit"></input></td>
 					
 
