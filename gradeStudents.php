@@ -104,7 +104,7 @@ if (isset ($_POST['totalGrade'])) {
 		}
 	?>
 	</select
-	<input href="gradeStudents.php" value="View Grades" type="submit"></input>
+	<a><input href="gradeStudents.php" value="View Grades" type="submit"> asd</input></a>
 </form>
 
 </body>
