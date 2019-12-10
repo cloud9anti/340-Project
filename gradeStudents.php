@@ -41,7 +41,40 @@ if (isset ($_POST['totalGrade'])) {
 <body>
 	<h1>Viewing Student ID: <?php echo $_POST['student_id']; ?> 's grades.</h1>
 
+<table id="table" align="center"></table>
 
+
+         <table style="width:90%">
+			<tr>
+			<th> First Name </th>
+			<th> Last Name </th>
+			<th> City </th>
+			
+			</tr>
+
+               <tr>
+                    <td><?php echo $people['first_name']; ?></td>
+                    <td><?php echo $people['last_name']; ?></td>
+                    <td><?php echo $people['city']; ?></td>
+                </tr>
+	<?php 
+
+ 
+              
+	while ($people2= mysqli_fetch_array($result)) {
+
+						?>
+						
+
+						
+                <tr>
+                    <td><?php echo $people2['first_name']; ?></td>
+                    <td><?php echo $people2['last_name']; ?></td>
+                    <td><?php echo $people2['city']; ?></td>
+                </tr>
+              
+          			<?php } ?>
+            </table>
 
         <style>
             table {
@@ -91,40 +124,7 @@ if (isset ($_POST['totalGrade'])) {
 
 
 
-<table id="table" align="center"></table>
 
-
-         <table style="width:90%">
-			<tr>
-			<th> First Name </th>
-			<th> Last Name </th>
-			<th> City </th>
-			
-			</tr>
-
-               <tr>
-                    <td><?php echo $people['first_name']; ?></td>
-                    <td><?php echo $people['last_name']; ?></td>
-                    <td><?php echo $people['city']; ?></td>
-                </tr>
-	<?php 
-
- 
-              
-	while ($people2= mysqli_fetch_array($result)) {
-
-						?>
-						
-
-						
-                <tr>
-                    <td><?php echo $people2['first_name']; ?></td>
-                    <td><?php echo $people2['last_name']; ?></td>
-                    <td><?php echo $people2['city']; ?></td>
-                </tr>
-              
-          			<?php } ?>
-            </table>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
