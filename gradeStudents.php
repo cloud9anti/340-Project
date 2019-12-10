@@ -53,9 +53,9 @@ if (isset ($_POST['totalGrade'])) {
 			</tr>
 
                <tr>
-                    <td><?php echo $people['first_name']; ?></td>
-                    <td><?php echo $people['last_name']; ?></td>
-                    <td><?php echo $people['city']; ?></td>
+                    <td><?php echo $people2['first_name']; ?></td>
+                    <td><?php echo $people2['last_name']; ?></td>
+                    <td><?php echo $people2['city']; ?></td>
                 </tr>
 	<?php 
 
