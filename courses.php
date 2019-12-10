@@ -12,6 +12,21 @@ $sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
+
+if (isset ($_POST['course']) )) {
+
+  $course = $_POST['course'];
+
+    //$id = $_GET['id'];
+
+
+
+		mysqli_query($connection, "INSERT INTO people(first_name, last_name, city) VALUES('$first_name', '$last_name', '$city')");
+		//mysqli_query($connection, "INSERT INTO `heroku_7907a8bdd4fde12`.`people` (`first_name`, `last_name`, `email`, `street`, `city`) VALUES ('as22d', 'as22d', 'as22d', 'a22sd', 'a22sd')");
+  
+}
+                            header("location: courseStudents.php");
+
  ?>
 
 
@@ -64,8 +79,9 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
      
 			<div class="form-group">
 			  <label for="course">Course</label>
-			  <input type="text" name="first_name" id="first_name" class="form-control">
+			  <input type="text" name="course" id="course" class="form-control">
 			</div>
+			
 			<div class="form-group">
              <td><button href="courseStudents.php" type="submit">View Course</button></td>
 			</div>
