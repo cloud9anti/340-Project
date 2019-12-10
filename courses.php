@@ -29,27 +29,6 @@ if (isset ($_POST['course'])) {
 
 <h1>Hello Professor, Please Insert, Edit, or Delete Courses from your Schedule</h1>
 <form>
-    <!--   <fieldset>
-            <legend id="form">Choose your exercise:</legend>
-            <input type="number" id="ID" hidden="true" />
-            Name: <input type="text" name="workoutName" id="name" value="" />
-            <br>
-            Reps: <input type="number" name="workoutReps" id="reps" value="0" />
-            <br>
-            Weight: <input type="number" name="workoutWeight" id="weight" value="0" />
-            <br>
-            Check if using lbs <input type="checkbox" name="workoutLbs" id="lbs" />
-            <br>
-            Date: <input type="date" name="workoutDate" id="date" value="2019-08-10" />
-            <br>
-
-            <input type="button" value="Add" id="add" />
-
-            <input type="button" value="Submit Edit" id="submitEdit" hidden="true" />
-
-        </fieldset>
-    </form>
-    -->
 
     <body>
 
@@ -84,7 +63,9 @@ if (isset ($_POST['course'])) {
 							<td><?php echo $people['course_name']; ?></td>
 							<td><?php echo $people['course_name']; ?></td>
 							<td><?php echo $people['course_id']; ?></td>
+							<td> HELLO </td>
 						</tr>
+						
 					  
 
 			<div class="form-group">
@@ -117,5 +98,6 @@ if (isset ($_POST['course'])) {
 
 	<link rel="stylesheet" href="styles.css">
 </body>
+</form>
 
 
