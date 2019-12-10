@@ -36,7 +36,7 @@ if (isset ($_POST['totalGrade'])) {
 </head>
 <body>
 	<h1>Viewing Student ID: <?php echo $_POST['student_id']; ?> 's grades.</h1>
-	
+	 <?php echo $studentID; ?> 
 
 
         <style>
