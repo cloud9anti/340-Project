@@ -13,7 +13,7 @@ $sql = "SELECT * FROM heroku_7907a8bdd4fde12.grade WHERE course_id = '$courseID'
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
-$sql2 = "SELECT * FROM heroku_7907a8bdd4fde12.people WHERE student_id = '$studentID'";
+$sql2 = "SELECT * FROM heroku_7907a8bdd4fde12.people WHERE people_id = '$studentID'";
 $result2 = mysqli_query($connection,$sql);
 $people2 = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
