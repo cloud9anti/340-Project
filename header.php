@@ -5,7 +5,13 @@
 
 
 ?>
-
+        <style>
+            table {
+                border: 1px solid black;
+				align: center;
+            }
+        </style>
+		
 <html lang="en">
   <head>
     <title>Welcome, Professor</title>
