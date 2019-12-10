@@ -63,6 +63,7 @@ if (isset ($_POST['course'])) {
 							<td><?php echo $people['course_id']; ?></td>
 							<td> HELLO </td>
 						</tr>
+									<?php } ?>
 						
 					  
 
@@ -78,7 +79,7 @@ if (isset ($_POST['course'])) {
                 <td><button type="button">EDIT</button></td>
                 <td><button type="button">DELETE</button></td>
   
-							<?php } ?>
+
 							
             <tr>
                 <th>Course</th>
