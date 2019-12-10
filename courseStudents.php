@@ -29,7 +29,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
             }
         </style>
 
-            <table style="width:100%">
+            <table style="width:90%">
 			<tr>
 			<th> Student ID </th>
 
