@@ -40,14 +40,18 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 			<th> City </th>
 			
 			</tr>
-	<?php 
-	
-	
+			
+			
+			
                 <tr>
                     <td><?php echo $people['first_name']; ?></td>
                     <td><?php echo $people['last_name']; ?></td>
                     <td><?php echo $people['city']; ?></td>
                 </tr>
+	<?php 
+	
+	
+
 
 
 	while ($people= mysqli_fetch_array($result)) {
