@@ -115,7 +115,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 		}
 	?>
 	</select>
-	<input align="center" href="home.php" value="Change Grade" type="submit"> </input>
+	<input align="center" href="home.php" value="Update" type="submit"> </input>
 </form>
 
 
