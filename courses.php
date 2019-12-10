@@ -12,6 +12,14 @@ $sql = 'SELECT * FROM heroku_7907a8bdd4fde12.people';
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
+
+if (isset ($_POST['course']) )) {
+
+   header("location: courseStudents.php");
+
+
+}
+
  ?>
 
 
