@@ -21,6 +21,19 @@ if (isset ($_POST['course'])) {
 
 
 }
+
+if (isset($_POST['btnDelete'])) {
+
+  $deleteID = $_POST['deleteID'];
+
+ mysqli_query($connection, "DELETE FROM heroku_7907a8bdd4fde12.course WHERE course_id = '$deleteID'");
+   header("Location: courses.php");
+
+}
+
+
+
+
                
 
  ?>
@@ -75,14 +88,17 @@ if (isset ($_POST['course'])) {
 
 							<input type="hidden" name="course" value="<?= $people['course_name']?>"> 
 							<input type="hidden" name="course_id" value="<?= $people['course_id']?>"> 
+							<input type="submit" name="btnDelete" value="Delete" />
 							<td><input href="courseStudents.php" value="View Course" type="submit"></input></td>
+					
 
 						</tr>
 					</form>
 									<?php } ?>
 				
 
-			
+
+ 
         </table>
 	  <li >
         <a href="courseAdd.php">Create New Course </a>
