@@ -28,7 +28,7 @@ if (isset ($_POST['course'])) {
 
 
 <h1>Hello Professor, Please Insert, Edit, or Delete Courses from your Schedule</h1>
-<form>
+
 
     <body>
 
@@ -98,6 +98,6 @@ if (isset ($_POST['course'])) {
 
 	<link rel="stylesheet" href="styles.css">
 </body>
-</form>
+
 
 
