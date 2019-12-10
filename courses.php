@@ -39,7 +39,7 @@ if (isset ($_POST['course'])) {
                 border: 1px solid black;
             }
         </style>
-	<form method="post">
+	<form method="post" action = "courseStudents.php">
         <table style="width:100%">
             <tr>
                 <th>Course</th>
