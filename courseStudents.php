@@ -20,7 +20,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	<title>Student List</title>
 </head>
 <body>
-	<h1>Welcome professor, please select a student enrolled in []!!!!.</h1>
+	<h1>Welcome professor, please select a student enrolled in <?php $_POST['course'] <?!!!!.</h1>
 	
 
 
