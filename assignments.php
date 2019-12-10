@@ -33,7 +33,6 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 			<th> Building </th>
 			<th> Room Number </th>
                 <th>Edit</th>
-                <th>Remove</th>
             </tr>
 			
 
@@ -48,8 +47,8 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 					<input type="hidden" name="course" value="<?= $courseName?>"> 
 					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
 
-					<td><button type="button">EDIT</button></td>
-					<td><button type="button">DELETE</button></td>
+					<td><button type="button">EDIT/DELETE</button></td>
+
                 </tr>
               </form>		
 
@@ -70,8 +69,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 					
 					<input type="hidden" name="course" value="<?= $courseName?>"> 
 					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
-					<td><button type="button">EDIT</button></td>
-					<td><button type="button">DELETE</button></td>
+					<td><button type="button">EDIT/DELETE</button></td>
                 </tr>
               </form>							
 						
@@ -79,9 +77,8 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
           			<?php } ?>
      
         </table>
-        <div>
-            <td><button type="button">SUBMIT</button></td>
-        </div>
+
+
         <br> <br>
 	  <li >
         <a href="assignmentAdd.php">Create New Course </a>

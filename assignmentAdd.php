@@ -1,7 +1,7 @@
 <?php
 require 'conndb.php';
 
-$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.course';
+$sql = 'SELECT * FROM heroku_7907a8bdd4fde12.grade';
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
