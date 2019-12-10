@@ -89,6 +89,8 @@ if (isset ($_POST['course'])) {
 						
 					</form>
 					<form method="post" action = "delete.php">
+							<input type="hidden" name="course" value="<?= $people['course_name']?>"> 
+							<input type="hidden" name="course_id" value="<?= $people['course_id']?>"> 
 							<td><input href="delete.php" type="submit" name="btnDelete" value="Delete" ></td>
 					</form>
 					</tr>
