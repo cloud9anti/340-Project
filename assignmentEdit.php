@@ -35,7 +35,6 @@ mysqli_query($connection, "UPDATE people SET course_id='$course_id', course_name
 
 						$result = mysqli_query($connection,$sql);
 
-						while ($grade= mysqli_fetch_array($result)) {
 
 					
  ?>
@@ -91,4 +90,3 @@ mysqli_query($connection, "UPDATE people SET course_id='$course_id', course_name
     </div>
   </div>
 </div>
-<?php } ?>
