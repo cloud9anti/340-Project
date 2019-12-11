@@ -16,7 +16,7 @@ echo $Pid;
 
 if (isset($_POST['grade_name'])) {
   $course_id = $_POST['course_id'];
-  $course_name = $_POST['course_name'];
+  $grade_type = $_POST['grade_type'];
   $grade_name = $_POST['grade_name'];
     $building = $_POST['building'];
   $room_number = $_POST['room_number'];
@@ -24,7 +24,7 @@ if (isset($_POST['grade_name'])) {
 
 
 
-mysqli_query($connection, "UPDATE people SET course_id='$course_id', course_name='$course_name', grade_name='$grade_name', building='$building', room_number='$room_number' WHERE grade_id = '$Pid'");
+mysqli_query($connection, "UPDATE people SET course_id='$course_id', grade_type='$grade_type', grade_name='$grade_name', building='$building', room_number='$room_number' WHERE grade_id = '$Pid'");
 
   header("Location: assignments.php");
 
