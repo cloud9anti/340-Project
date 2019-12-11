@@ -34,7 +34,7 @@ mysqli_query($connection, "UPDATE people SET course_id='$course_id', grade_type=
 						$sql = "SELECT * FROM heroku_7907a8bdd4fde12.grade WHERE grade_id = '$Pid'";
 
 						$result = mysqli_query($connection,$sql);
-
+						$people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 					
  ?>
