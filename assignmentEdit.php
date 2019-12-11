@@ -11,7 +11,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 $Pid = $_POST['grade_id'];
 
-$Pid = (int)$Pid;
+//$Pid = (int)$Pid;
 echo $Pid;
 
 if (isset($_POST['grade_name'])) {
