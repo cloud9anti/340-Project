@@ -11,8 +11,6 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 $Pid = $_POST['grade_id'];
 
-//$Pid = (int)$Pid;
-echo $Pid;
 
 if (isset($_POST['grade_name'])) {
   $course_id = $_POST['course_id'];
@@ -94,3 +92,9 @@ mysqli_query($connection, "UPDATE grade SET course_id='$course_id', grade_type='
     </div>
   </div>
 </div>
+
+			<form method="post" action = "delete.php">
+			<h1> Delete This Assignment </h1>
+					<input type="hidden" name="btnDelete2" value="<?= $Pid?>"> 
+					<input href="delete.php" value="Delete" type="submit"></input>
+			</form>
