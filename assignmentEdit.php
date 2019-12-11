@@ -12,7 +12,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $Pid = $_POST['grade_id'];
 
 $Pid = (int)$Pid;
-
+echo $Pid;
 
 if (isset($_POST['grade_name'])) {
   $course_id = $_POST['course_id'];
@@ -24,7 +24,7 @@ if (isset($_POST['grade_name'])) {
 
 
 
-mysqli_query($connection, "UPDATE people SET course_id='$course_id', course_name='$course_name', grade_name='$grade_name', building='$building', room_number='$room_number' WHERE grade_id = '$myGrade'");
+mysqli_query($connection, "UPDATE people SET course_id='$course_id', course_name='$course_name', grade_name='$grade_name', building='$building', room_number='$room_number' WHERE grade_id = '$Pid'");
 
   header("Location: assignments.php");
 
