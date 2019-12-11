@@ -84,8 +84,6 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
      
         </table>
 
-
-        <br> <br>
 	  <li >
         <a href="assignmentAdd.php">Create New Assignment </a>
       </li>
