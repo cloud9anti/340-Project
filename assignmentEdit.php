@@ -60,12 +60,12 @@ mysqli_query($connection, "UPDATE people SET course_id='$course_id', course_name
       <form method="post">
         <div class="form-group">
           <label for="course_id">Course ID</label>
-          <input value="<?= $grade['course_id']; ?>" type="text" value="" name="course_id" id="course_id" class="form-control">
+          <input value="<?= $people['course_id']; ?>" type="hidden" value="" name="course_id" id="course_id" class="form-control">
         </div>
 
         <div class="form-group">
           <label for="grade_type">Grade Type</label>
-          <input value="<?= $grade['course_name']; ?>"  type="text" name="grade_type" id="grade_type" class="form-control">
+          <input value="<?= $people['course_name']; ?>"  type="text" name="grade_type" id="grade_type" class="form-control">
         </div>
 
 		  <div class="form-group">
