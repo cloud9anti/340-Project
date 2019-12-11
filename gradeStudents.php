@@ -13,7 +13,7 @@ $sql = "SELECT * FROM heroku_7907a8bdd4fde12.grade WHERE course_id = '$courseID'
 $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
-$sql2 = "SELECT * FROM heroku_7907a8bdd4fde12.people WHERE people_id = '$studentID'";
+$sql2 = "SELECT * FROM heroku_7907a8bdd4fde12.people ";
 $result2 = mysqli_query($connection,$sql);
 $people2 = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
@@ -44,7 +44,37 @@ if (isset ($_POST['totalGrade'])) {
 <table id="table" align="center"></table>
 
 
+         <table style="width:90%">
+			<tr>
+			<th> First Name </th>
+			<th> Last Name </th>
+			<th> City </th>
+			
+			</tr>
+
+               <tr>
+                    <td><?php echo $people2['first_name']; ?></td>
+                    <td><?php echo $people2['last_name']; ?></td>
+                    <td><?php echo $people2['city']; ?></td>
+                </tr>
+	<?php 
+
  
+              
+	while ($people2= mysqli_fetch_array($result)) {
+
+						?>
+						
+
+						
+                <tr>
+                    <td><?php echo $people2['first_name']; ?></td>
+                    <td><?php echo $people2['last_name']; ?></td>
+                    <td><?php echo $people2['city']; ?></td>
+                </tr>
+              
+          			<?php } ?>
+            </table>
 
         <style>
             table {
