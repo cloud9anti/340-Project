@@ -39,7 +39,7 @@ mysqli_query($connection, "UPDATE people SET course_id='$course_id', course_name
 					
  ?>
  
- 	
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">	
 <div class="container">
   <div class="card mt-5">
     <div class="card-header">
