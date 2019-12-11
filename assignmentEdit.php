@@ -65,22 +65,22 @@ mysqli_query($connection, "UPDATE people SET course_id='$course_id', grade_type=
 
         <div class="form-group">
           <label for="grade_type">Grade Type</label>
-          <input value="<?= $people['course_name']; ?>"  type="text" name="grade_type" id="grade_type" class="form-control">
+          <input value="<?= $people['grade_type']; ?>"  type="text" name="grade_type" id="grade_type" class="form-control">
         </div>
 
 		  <div class="form-group">
           <label for="grade_name">Grade Name</label>
-          <input value="<?= $grade['grade_name']; ?>"  type="text" name="grade_name" id="grade_name" class="form-control">
+          <input value="<?= $people['grade_name']; ?>"  type="text" name="grade_name" id="grade_name" class="form-control">
         </div>
 
         <div class="form-group">
           <label for="building">Building</label>
-          <input value="<?= $grade['building']; ?>"  type="text" name="building" id="building" class="form-control">
+          <input value="<?= $people['building']; ?>"  type="text" name="building" id="building" class="form-control">
         </div>
 
 		  <div class="form-group">
           <label for="room_number">Room Number</label>
-          <input value="<?= $grade['room_number']; ?>"  type="text" name="room_number" id="room_number" class="form-control">
+          <input value="<?= $people['room_number']; ?>"  type="text" name="room_number" id="room_number" class="form-control">
         </div>
 
         <div class="form-group">
