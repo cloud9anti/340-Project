@@ -18,7 +18,7 @@ if (isset ($_POST['course_id'])  && isset($_POST['grade_name'])) {
 
 
 		mysqli_query($connection, "INSERT INTO grade(grade_type, course_id, grade_name, building, room_number) VALUES('$grade_type', '$course_id', '$grade_name', '$building', '$room_number')");
-  
+    header("Location: assignments.php");
 }
  ?>
 <?php require 'header.php'; ?>
