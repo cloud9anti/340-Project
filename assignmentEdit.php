@@ -31,7 +31,7 @@ mysqli_query($connection, "UPDATE people SET course_id='$course_id', course_name
 }
 
 						//Include assignments table
-						$sql = "SELECT * FROM grade WHERE grade_id = '$Pid'";
+						$sql = "SELECT * FROM heroku_7907a8bdd4fde12.grade WHERE grade_id = '$Pid'";
 
 						$result = mysqli_query($connection,$sql);
 
