@@ -93,8 +93,23 @@ mysqli_query($connection, "UPDATE grade SET course_id='$course_id', grade_type='
   </div>
 </div>
 
+<div class="container">
+  <div class="card mt-5">
+    <div class="card-header">
+      <h2>Edit or Delete Assignment</h2>
+    </div>
+    <div class="card-body">
+      <?php if(!empty($message)): ?>
+        <div class="alert alert-success">
+          <?= $message; ?>
+        </div>
+      <?php endif; ?>
+	  
 			<form method="post" action = "delete.php">
 			<h1> Delete This Assignment </h1>
 					<input type="hidden" name="btnDelete2" value="<?= $Pid?>"> 
 					<input href="delete.php" value="Delete" type="submit"></input>
 			</form>
+    </div>
+  </div>
+</div>
