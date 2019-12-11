@@ -12,9 +12,9 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $Pid = $_POST['grade_id'];
 
 $Pid = (int)$Pid;
-echo $Pid;
 
-if (isset (isset($_POST['grade_name'])) {
+
+if (isset($_POST['grade_name'])) {
   $course_id = $_POST['course_id'];
   $course_name = $_POST['course_name'];
   $grade_name = $_POST['grade_name'];
