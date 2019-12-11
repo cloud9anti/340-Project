@@ -6,9 +6,10 @@ $result = mysqli_query($connection,$sql);
 $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 $message = '';
-if (isset ($_POST['course_id'])  && isset($_POST['grade_name'])) {
+if (isset($_POST['grade_name'])) {
   $course_id = $_POST['course_id'];
   $course_name = $_POST['course_name'];
+    $grade_type = $_POST['grade_type'];
   $grade_name = $_POST['grade_name'];
     $building = $_POST['building'];
   $room_number = $_POST['room_number'];
