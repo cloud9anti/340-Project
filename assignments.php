@@ -73,7 +73,7 @@ $people = mysqli_fetch_array($result, MYSQLI_ASSOC);
                     <td><?php echo $people['building']; ?></td>
                     <td><?php echo $people['room_number']; ?></td>
 					
-					<input type="hidden" name="edit" value="<?= $people['grade_id']?>"> 		
+					<input type="text" name="edit" value="<?= $people['grade_id']?>"> 		
 					<input type="hidden" name="course_id" value="<?= $courseID?>"> 
 					<td><input href="assignmentEdit.php" value="EDIT/DELETE" type="submit"></input></td>
                 </tr>
