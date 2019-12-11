@@ -95,9 +95,6 @@ mysqli_query($connection, "UPDATE grade SET course_id='$course_id', grade_type='
 
 <div class="container">
   <div class="card mt-5">
-    <div class="card-header">
-      <h2>Edit or Delete Assignment</h2>
-    </div>
     <div class="card-body">
       <?php if(!empty($message)): ?>
         <div class="alert alert-success">
