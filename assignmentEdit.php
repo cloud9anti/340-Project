@@ -24,7 +24,7 @@ if (isset($_POST['grade_name'])) {
 
 
 
-mysqli_query($connection, "UPDATE grade SET course_id='$course_id', grade_type='$grade_type', grade_name='$grade_name', building='$building', room_number='$room_number' WHERE grade_id = '$Pid'");
+mysqli_query($connection, "UPDATE grade SET course_id='$course_id', grade_type='$grade_type', grade_name='$grade_name', building='$building', room_number='$room_number' WHERE grade_id = '$myGrade'");
 
   header("Location: assignments.php");
 
@@ -58,6 +58,10 @@ mysqli_query($connection, "UPDATE grade SET course_id='$course_id', grade_type='
 
 
       <form method="post">
+	  
+        <div class="form-group">
+          <input value="<?= $Pid; ?>" type="hidden"  name="grade_id" id="course_id" class="form-control">
+        </div>
         <div class="form-group">
           <label for="course_id">Course ID</label>
           <input value="<?= $people['course_id']; ?>" type="text"  name="course_id" id="course_id" class="form-control">
